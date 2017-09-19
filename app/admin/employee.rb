@@ -43,9 +43,7 @@ ActiveAdmin.register Employee do
 	  	row :barcode
 
 	  end
-
-      
-  end
+  	end
 
 
 

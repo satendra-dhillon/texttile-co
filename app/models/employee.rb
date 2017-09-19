@@ -6,6 +6,8 @@ class Employee < ApplicationRecord
 
   before_save :genrate_bar_code
 
+  has_many :attendances, dependent: :destroy
+
 
 
 

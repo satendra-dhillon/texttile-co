@@ -25,6 +25,8 @@ ActiveAdmin.setup do |config|
   #
   # eg:
   #   config.default_namespace = :hello_world
+
+  config.current_user_method   = :current_user
   #
   # This will create resources in the HelloWorld module and
   # will namespace routes to /hello_world/*

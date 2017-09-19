@@ -1,1 +1,10 @@
 Welcome to dashboard!!!
+
+</br>
+<% if @employee_attandence.present? %>
+	<%=link_to "Attendance", edit_attendance_path(@employee_attandence)%>
+	<%else%>
+	<%=link_to "Attendance", new_attendance_path%>
+<%end%>
+</br>
+<%=link_to "My Attendance", attendances_path%>

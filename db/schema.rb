@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170919155720) do
+ActiveRecord::Schema.define(version: 20170919165730) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(version: 20170919155720) do
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
     t.index ["namespace"], name: "index_active_admin_comments_on_namespace"
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
+  end
+
+  create_table "attendances", force: :cascade do |t|
+    t.string "username"
+    t.integer "barcode"
+    t.datetime "in_at"
+    t.datetime "out_at"
+    t.integer "employee_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["employee_id"], name: "index_attendances_on_employee_id"
   end
 
   create_table "companies", force: :cascade do |t|
@@ -57,7 +68,6 @@ ActiveRecord::Schema.define(version: 20170919155720) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "barcode"
-    t.string "name"
     t.string "username"
     t.index ["email"], name: "index_employees_on_email", unique: true
     t.index ["reset_password_token"], name: "index_employees_on_reset_password_token", unique: true
