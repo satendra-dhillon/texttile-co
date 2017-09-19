@@ -1,4 +1,6 @@
 ActiveAdmin.register Company do
+  config.clear_sidebar_sections!
+
   permit_params :email, :password, :password_confirmation
 
   index do
