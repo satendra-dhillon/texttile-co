@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  barcode: 1
+  in_at: 2017-09-19 22:27:30
+  out_at: 2017-09-19 22:27:30
+
+two:
+  username: MyString
+  barcode: 1
+  in_at: 2017-09-19 22:27:30
+  out_at: 2017-09-19 22:27:30

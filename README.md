@@ -24,31 +24,3 @@ Here you can create employes by clicking on employees and create new
 11) To chek the in-out timing of the employees , agiain got to the "localhost:3000/admin", clcik on attendance and it will list the all employees in-out timeing.
 
 12) If an employee wants to check its own attendance than he can login to its credentials and click on my attendances. For now I haven't add any condition for this to see own attendance (point:3)
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# texttile-co
-
-
-
-
